@@ -32,7 +32,7 @@ function proxy -d "Setup proxy environment variables"
   end
 
   if set -q proxy_bypass
-    __noproxy.set $proxy_bypass
+    __noproxy.set "$proxy_bypass"
   end
 end
 
