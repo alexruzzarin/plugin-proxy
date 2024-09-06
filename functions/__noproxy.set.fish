@@ -1,5 +1,5 @@
 function __noproxy.set -a noproxy \
-  -d "Set all proxy vars to specified value"
+  -d "Set all no proxy vars to specified value"
 
   set -l envars no_proxy NO_PROXY
 
