@@ -4,7 +4,7 @@ function __noproxy.set -a noproxy \
   set -l envars no_proxy NO_PROXY
 
   for envar in $envars
-    if test $proxy = '-e'
+    if test $noproxy = '-e'
       set -e $envar
     else
       set -Ux $envar $noproxy
