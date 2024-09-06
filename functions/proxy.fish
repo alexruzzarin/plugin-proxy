@@ -30,5 +30,9 @@ function proxy -d "Setup proxy environment variables"
   else
     __proxy.set "http://$proxy_host"
   end
+
+  if set -q proxy_bypass
+    __noproxy.set $proxy_bypass
+  end
 end
 
